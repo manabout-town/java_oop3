@@ -1,18 +1,21 @@
 package io;
 
+import java.util.Scanner;
+
 public class Test {
+  public static void main(String[] args) {
 
-  /**
-   * 1 - 3
-   * 2 - 3
-   * 3 - 2
-   * 4 - 2
-   * 5 - 3
-   * 6 - 2
-   * 7 - 3
-   * 8 - 2
-   * 9 - 한글은 3바이트 라서 읽을 수가 없음 printf 를 사용해야함
-   * 10 - 엔터를 쳐야함 (\n) , () , 3번
-   */
 
+    final String apiKey = "sjhkdksa";
+
+
+    if (apiKey != null && apiKey != "") {
+      System.out.println("인증 성공");
+    } else {
+      System.out.print("키를 입력하세요 : ");
+    }
+
+
+
+  }
 }
