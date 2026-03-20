@@ -18,10 +18,10 @@ public class ClientFile {
 
     try {
       // host와 port에 해당하는 소켓 생성 (host: ServerMain (localhost) , port: 8080)
-      socket = new Socket("localhost", 3000);
+      socket = new Socket("192.168.7.154", 3000);
 
       in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-      out = new PrintWriter(socket.getOutputStream());
+      out = new PrintWriter(socket.getOutputStream(),true);
 
       while(true) {
         System.out.print("전송하기>>> ");
