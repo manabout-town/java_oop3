@@ -1,7 +1,5 @@
 package client.ch03;
 
-import com.sun.source.tree.WhileLoopTree;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -9,11 +7,11 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-public class MultiThreadedServer {
+public class MultiThreadedClient {
 
   public static void main(String[] args) {
     // 192.168.4.12 - 회욱 IP 주소
-    try (Socket socket = new Socket("192.168.4.101", 5001)) {
+    try (Socket socket = new Socket("192.168.4.101", 5000)) {
 
       // 소켓에서 연결 할 입력, 출력 스트림 2개가 필요하다.
       PrintWriter writer = new PrintWriter(socket.getOutputStream(), true);
