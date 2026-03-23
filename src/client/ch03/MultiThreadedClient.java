@@ -44,7 +44,7 @@ public class MultiThreadedClient {
         public void run() {
           try {
             String clientMessage;
-            while ((clientMessage =keyboardReader.readLine()) != null) {
+            while ((clientMessage = keyboardReader.readLine()) != null) {
               writer.println(clientMessage);
               if ("exit".equalsIgnoreCase(clientMessage)) {
                 System.out.println("클라이언트가 종료했습니다");
