@@ -5,8 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.awt.*;
 import java.util.ArrayList;
-import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -25,6 +25,5 @@ public class Items {
   private String clearTime;
   private String issueGbn;
   private String itemCode;
-
 
 }

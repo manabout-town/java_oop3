@@ -34,6 +34,7 @@ public class ApiExplorer {
     }
     rd.close();
     conn.disconnect();
-    System.out.println(sb.toString());
+
+
   }
 }

@@ -42,6 +42,8 @@ private static final String BASE_URL = "http://apis.data.go.kr/B552584/UlfptcaAl
 
     System.out.println(air.getResponse().getBody().getItems());
 
+
+
     rd.close();
     conn.disconnect();
 
